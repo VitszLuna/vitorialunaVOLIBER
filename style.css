@@ -69,14 +69,10 @@ a{
     color: #000000;
     background-color: #ffffff;
 }
-.inicio{
+.inicio {
     background-color: #000000;
     color: #e2e2e2;
-    display:block;
-    width: 100%;
- height: 100px;
- margin-top: 10px;
-
+    padding: 20px;
 }
 .carousel{
  position: absolute;
@@ -91,13 +87,67 @@ a{
     font-size: 35px;
     font-weight: bold
 }
-.habilidades{
-text-align: center;
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre imagens */
+    margin-top: 20px;
 }
+
+.habilidades img {
+    width: 100px; /* Ajuste o tamanho das imagens */
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra às imagens */
+}
+
+.habilidades img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+.oqee p {
+    text-align: justify; /* Alinha o texto para facilitar a leitura */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+    font-size: 1.4rem; /* Tamanho padrão para o texto */
+}
+
+@media (max-width: 768px) {
+    .oqe p {
+        font-size: 1.9rem; /* Ajusta o tamanho do texto para telas menores */
+        padding: 10px; /* Adiciona espaçamento interno em telas menores */
+    }
+}
+
+@media (min-width: 1200px) {
+    .oqe p {
+        .oqe p{
+   
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    width: 1300px;
+    height: 200px;
+}
+    }
+}
+
+.oqee h2{
+    color: rgb(170, 126, 16);
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold
+}
+
 .oqe img{
     
         align-items: center;
-        position: relative;
         left: 280px;
            width: 150px;
            background-color: #000000;
@@ -137,7 +187,7 @@ text-align: center;
     padding: 20px;
     margin: 5 px;
     display: inline-block;
-left: 180px;
+left: 100px;
     
 
 
@@ -201,16 +251,12 @@ font-family: Arial, Helvetica, sans-serif;
 padding: 5px;
  }
 
-
-
-.container{
-    text-align: justify;
-    background-color: #ccd4f3;
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
+ .container {
+     text-align: justify;
+     background-color: #ccd4f3;
+     padding: 20px;
+     margin: 10px auto;
+ }
 .container1{
  
     padding-left: 230px;
@@ -222,6 +268,7 @@ padding: 5px;
     
     
 }
+
 
 .container2{
    
